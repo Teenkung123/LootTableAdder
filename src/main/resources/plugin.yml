@@ -1,0 +1,21 @@
+name: LootTableAdder
+main: com.Teenkung123.lootTableAdder.LootTableAdder
+version: 1.0.0
+api-version: 1.21
+description: A plugin to add custom items to Minecraft's vanilla loot tables.
+author: Teenkung123
+depend:
+  - NBTAPI
+softdepend:
+  - ItemsAdder
+  - MMOItems
+commands:
+  loottable:
+    aliases: [loot-table, lt]
+    description: Retrieve the loot table of the targeted object.
+    usage: /lt
+    permission: loottable.admin
+permissions:
+  loottableadder.getloottable:
+    description: Allows players to retrieve loot tables of targeted objects.
+    default: true
